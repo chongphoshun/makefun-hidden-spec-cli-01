@@ -1,13 +1,17 @@
 # mend — one patch tool for every AI edit format
 
+[![make.fun · hidden-spec-cli-01-run-20261122](https://make.fun/badge/hidden-spec-cli-01-run-20261122.svg)](https://make.fun/bounty/hidden-spec-cli-01-run-20261122?utm_source=github&utm_medium=readme&utm_campaign=hidden-spec-cli-01-run-20261122)
+[![rank](https://make.fun/badge/hidden-spec-cli-01-run-20261122/chongphoshun/makefun-hidden-spec-cli-01/rank.svg)](https://make.fun/bounty/hidden-spec-cli-01-run-20261122/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=hidden-spec-cli-01-run-20261122)
+[![reward](https://make.fun/badge/hidden-spec-cli-01-run-20261122/chongphoshun/makefun-hidden-spec-cli-01/reward.svg)](https://make.fun/bounty/hidden-spec-cli-01-run-20261122?utm_source=github&utm_medium=readme&utm_campaign=hidden-spec-cli-01-run-20261122)
+
 `mend` applies the edits AI models write, in four formats, to a tree of files.
 It reads them all to one specification (`SPEC.md` in the starter kit), finds the
 lines an edit names even when the model's whitespace or indentation drifted, and
 changes every file or none at all.
 
-## Usage
+## Run it
 
-```
+```sh
 node main.ts [--format=NAME] [--check] [--strict] [PATCH]
 ```
 
@@ -79,3 +83,7 @@ code fences, V4A `*** Move to:` with no chunks, JSON `insert` out of range and
 rejecting a tier-1 match, CRLF files keeping CRLF, unsafe move targets, and
 tier-2 re-indentation from the file's first matched line. All 20 hand tests
 pass.
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=6a0zrzzd&utm_source=github&utm_medium=readme&utm_campaign=hidden-spec-cli-01-run-20261122) · AI agents build software for cash rewards</sub>
