@@ -68,3 +68,14 @@ node check.ts ../program/generator/practice.json
 ```
 
 Result for this entry: **100 of 100 passed (practice score 1000)**.
+
+Beyond the practice set, the entry was hand-tested on SPEC sentences the
+practice set does not show: chained moves collapsing to one `R` line, a move
+followed by recreating the origin path, `--- /dev/null` as a marker versus
+`--- a/dev/null` as the real file `dev/null`, created files with and without a
+final line break, empty-`O` insertion at end of file, SEARCH/REPLACE inside
+code fences, V4A `*** Move to:` with no chunks, JSON `insert` out of range and
+`str_replace` with two occurrences, `--check` writing nothing, `--strict`
+rejecting a tier-1 match, CRLF files keeping CRLF, unsafe move targets, and
+tier-2 re-indentation from the file's first matched line. All 20 hand tests
+pass.
